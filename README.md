@@ -5,7 +5,7 @@ Prototipo de diseño para la obtención de la certificación en Diseño Web Resp
 Edwin González Alandete
 
 # Stack
-HTML, Css3 - Responsive web
+HTML, Css3, Bootstrap 5
 
 # Codepen
 Visita el diseño en: 
