@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
 
 :root {
-  --PrimaryColor: #57A3B4;
-  --SecundaryColor: #A95658;
+  --PrimaryColor: #C6494C;
+  --SecundaryColor: #F2E9DC;
 }
 
 html {
@@ -14,7 +14,34 @@ body {
   font-weight: 400;
   color: #444;
   background-color: #fff;
-  padding: 10% 5%;
+  padding: 0;
   margin: 0;
 }
 
+a {
+  color: var(--PrimaryColor) !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+}
+
+#inicio {
+  padding: 10% 5%;
+  color: var(--SecundaryColor);
+  background-image: linear-gradient( 178.2deg,  rgba(118,8,23,1) 10.9%, rgba(158,12,33,1) 62.6% );
+}
+
+#inicio h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--SecundaryColor);
+  margin-bottom: 2rem;
+}
+
+#inicio h1 span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: var(--SecundaryColor);
+  font-style: normal;
+}
