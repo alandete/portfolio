@@ -24,13 +24,24 @@ a {
   text-decoration: none !important;
 }
 
-#inicio {
+/*  Barra de navegación
+****************************************************/
+.navbar-nav .nav-item .nav-link{
+  color: var(--SecundaryColor) !important;
+  font-size: 1.1rem;
+}
+
+/*  Bienvenida
+****************************************************/
+#welcome-section {
   padding: 10% 5%;
+  margin-top: 56px;
+  height: 100vh;
   color: var(--SecundaryColor);
   background-image: linear-gradient( 178.2deg,  rgba(118,8,23,1) 10.9%, rgba(158,12,33,1) 62.6% );
 }
 
-#inicio h1 {
+#welcome-section h1 {
   font-size: 2.5rem;
   font-weight: 500;
   font-style: italic;
@@ -38,10 +49,62 @@ a {
   margin-bottom: 2rem;
 }
 
-#inicio h1 span {
+#welcome-section h1 span {
   display: block;
   margin-top: 1rem;
   font-size: 1.3rem;
   color: var(--SecundaryColor);
   font-style: normal;
+}
+
+/*  Proyectos
+****************************************************/
+#proyectos .card .card-body h3.card-text{
+  margin-bottom: 0.5rem;
+  color: #444 !important;
+  font-size: 1.4rem;
+}
+#proyectos .card .card-body h3.card-text:hover{
+  color: var(--PrimaryColor) !important;
+}
+#proyectos .card .card-body p{
+  font-size: .9rem;
+  color: #555;
+}
+
+/*  Footer
+****************************************************/
+footer{
+  padding: 1rem 0 2rem;
+  font-size: .8rem;
+  color: #555;
+  border-top: 1px solid #eee;
+}
+
+
+/*  Media queries
+****************************************************/
+@media (min-width: 768px) {
+  #proyectos .album .col{
+    width: 49.88888%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #welcome-section {
+    display: flex;
+    align-items: center;
+    margin-top: 58px;
+  }
+  #welcome-section h1{
+    width: 70%;
+  }
+  #welcome-section p{
+    font-size: 1.2rem;
+  }
+
+  #proyectos .album .col{
+    width: 33.3333333%;;
+  }
+
 }
